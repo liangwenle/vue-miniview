@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="ok">
+    <Miniview msg="ok">
       <div slot-scope="slotProps">
         <div 
         v-for="(node,index) in nodes" 
@@ -11,17 +11,17 @@
           {{node.title}}
         </div>
       </div>
-    </HelloWorld>
+    </Miniview>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Miniview from "./components/Miniview.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    Miniview
   },
   data() {
     return {
